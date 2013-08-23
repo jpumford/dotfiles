@@ -1,0 +1,53 @@
+vbell off # turn off visual bell
+
+# Pretty status bar at bottom
+#hardstatus alwayslastline "%{.ck}%H %{.gk}%c %{.yk}%M%d %{.wk}%?%-Lw%?%{.bw}%n*%f %t%?(%u)%?%{.wk}%?%+Lw%?"
+  
+caption always "%m/%d/%y %0c%{=b kg}  %l  %{=r gk}%-w%{=b wb}%50>%n%f* %t%{-}%+Lw%<%{- Wk}"
+ ===============================================================
+ # Messages
+ # # ===============================================================
+ # # There are two kinds of messages:  "activity" and "bell"
+ # # They are also the names of the commands that set the
+ # # respective messages.  In every message there can be "meta
+ # # strings" which are replaced by values.  A meta string starts
+ # # with a percent sign and is then followed by one of the
+ # # following letters: aAdDmMnstwWyY The meta strings refer to
+ # # the current date and time or to a window title or number:
+ # #   %t - title
+ # #   %n - number (a single % still works)
+ # #   %d - day
+ # #   %D - weekday name
+ # #   %m - month
+ # #   %M - month name
+ # #   %y - year (2 digit)
+ # #   %Y - year (4 digit)
+ # #   %w - hour:minutes (24h format)
+ # #   %W - hour:minutes (12h format)
+ # #   %s - seconds
+ # #   %a - am/pm
+ # #   %A - AM/PM
+ # # Older versions of screen used a single '%' character
+ # # for window titles - but since version 3.7 this is
+ # # obsoleted by '%n' and will vanish in future releases!
+ # # So please update your screenrc to meet this convention!
+ # #
+ # # ===============================================================
+ # # "~" stands for the "bell" character
+ # #
+ # # activity:     This message *includes* a "beep" with '~'.
+ activity              "activity in %n (%t) [%w:%s]~"
+ #   #
+ #   # bell:         This message *includes* a "beep" with '~'.
+ bell                  "bell     in %n (%t) [%w:%s]~"
+ #     #
+ #     # pow_detach_msg:       Message shown when session
+ #     #                       gets power detached.
+ pow_detach_msg        "BYE"
+ #       #
+ #       # vbell_msg:            Message shown when the
+ #       #                       "virtual bell" rings.
+ vbell_msg             " *beep* "
+
+ # 256 colors
+term screen-256color

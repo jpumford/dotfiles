@@ -1,0 +1,12 @@
+" fix for gitgutter using /bin/sh
+set shell=$SHELL
+
+set shiftwidth=4
+set tabstop=4
+set noexpandtab
+
+" destroy relative numbering!
+set norelativenumber
+
+" remove tab highlighting
+set nolist
