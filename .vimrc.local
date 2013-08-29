@@ -10,3 +10,13 @@ set norelativenumber
 
 " remove tab highlighting
 set nolist
+
+set whichwrap=<,>,[,]   " Backspace and cursor keys don't wrap
+
+set wrap " keep linewrapping
+
+set nolinebreak " wrap at the last character
+
+set textwidth=0 " remove autobreaking of text at any length
+
+set wrapmargin=0
