@@ -1,5 +1,6 @@
 set nocompatible " use vi improved!
 set shell=/bin/bash
+set t_Co=16
 
 " config for vundle
 filetype on
